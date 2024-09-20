@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Template Area</title>
+    <style>
+        body{
+            background-image: linear-gradient(rgb(16, 16, 16),wheat,white);
+        }
+        .ma{
+            width: 70vw;
+            height: 70vh;
+            border: 1px solid;
+            display: grid;
+            align-items: center;
+            
+            grid-template-areas: 
+            'itm1 itm2 itm3'
+            'itm1 itm5 itm7'
+            'itm4 itm5 itm7'
+            'itm4 itm5 itm6';
+            gap: 10px;
+            padding: 10px;
+        }
+        .item:hover{
+            width: 110%;
+            box-shadow: 0px 0px 11px 5px #000000;
+        }
+
+        .item{
+            width: 90%;
+            height: 90%;
+            /* object-fit: cover; */
+            border: 1px solid;
+        }
+
+        .item1{
+            background-image: url(https://i.pinimg.com/originals/ea/fd/16/eafd1603d0937a7fe51208013cc84eb2.jpg);
+            background-position: center center;
+            background-size: cover;
+            grid-area: itm1;
+        }
+        .item2{
+            background-image: url(https://i.pinimg.com/736x/22/28/30/2228303da106c074ba1ea165348aad99.jpg);
+            background-position: center center;
+            background-size: cover;
+            grid-area: itm2;
+        }
+        .item3{
+            background-image: url(https://www.vanguardia.com/resizer/v2/JBVSLXD6MJAERFUPEQDWQVCA2Y.jpg?auth=62fcd0e7d14bc0dcd1a963efd2b1825b238af2877a7b1a5830768592ce461c3a&smart=true&width=1200&height=800&quality=70);
+            background-position: center center;
+            background-size: cover;
+            grid-area: itm3;
+        }
+        .item4{
+            background-image: url(https://images-0.rakuten.tv/storage/snapshot/shot/13491cfc-9751-4e95-9ef6-f609eafbba0d-snapshot-1590662510-width936-quality90.jpeg);
+            background-position: center center;
+            background-size: cover;
+            grid-area: itm4;
+        }
+        .item5{
+            background-image: url(https://images.immediate.co.uk/production/volatile/sites/3/2018/05/IRON-2008-d7a2706.jpg?quality=90&resize=800,534);
+            background-position: center center;
+            background-size: cover;
+            grid-area: itm5;
+        }
+        .item6{
+            background-image: url(https://gfx.antyradio.pl/var/antyradio2/storage/images/filmy-i-seriale/filmy/avengers-endgame-tony-stark-mogl-przezyc-tworcy-zdradzili-jak-powstawal-scenariusz-34522/10655415-3-pol-PL/Avengers-Endgame-Tony-Stark-mogl-przezyc.-Tworcy-zdradzili-jak-powstawal-scenariusz_article-v2.jpg);
+            background-position: center center;
+            background-size: cover;
+            grid-area: itm6;
+        }
+        .item7{
+            background-image: url(https://www.superherohype.com/wp-content/uploads/sites/4/2023/05/iron-man-3-retrospective.webp);
+            background-position: center center;
+            background-size: cover;
+            grid-area: itm7;
+        }
+    </style>
+</head>
+<body>
+    <center><h2>Grid Template Area </h2></center>
+    <center><div class="ma">
+        <div class="item item1"></div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+        <div class="item item6">6</div>
+        <div class="item item7">7</div>
+    </div></center>
+    
+</body>
+</html>
